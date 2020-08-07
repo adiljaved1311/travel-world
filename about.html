@@ -18,7 +18,7 @@
   <title>TravelWorld</title>
 </head>
 
-<body id="contact"   class="scrollspy">
+<body id="contact" class="scrollspy">
 
   <!-- NAVBAR -->
 
@@ -29,6 +29,7 @@
 
           <a href="#" class="brand-logo">TravelWorld</a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         
           <!-- Dropdown Structure -->
           <ul id='dropdown1' class='dropdown-content'>
             <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Sign in</a></li>
@@ -39,6 +40,7 @@
                   <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
                 <li><a href="#!"><i class="material-icons">cloud</i>five</a></li> -->
           </ul>
+
           <ul class="right hide-on-med-and-down">
             <li>
               <a href="index.html">Home</a>
@@ -94,6 +96,7 @@
     </li>
   </ul>
 
+  <!-- End of Navbar  -->
 
 
   <!-- Section : Contact  -->
@@ -102,10 +105,10 @@
       <div class="row">
 
         <div class="col s12 m6">
-          <div class="card-panel teal lighten-2 white-text-center">
-            <i class="material-icons">email</i>
-            <h5>Contact Us For Booking</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores illum incidunt quidem optio qui
+          <div class="card-panel teal white-text-center" >
+            <i class="material-icons white-text">email</i><span class="white-text right" style="margin: 0 35px;">travelworld@gmail.com</span>
+            <h5 class="white-text">Contact Us For Booking</h5>
+            <p class="white-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores illum incidunt quidem optio qui
               deserunt repudiandae expedita fuga dignissimos corrupti!</p>
           </div>
           <ul class="collection with-header">
@@ -136,7 +139,7 @@
             </div>
 
             <div class="input-field"><i class="material-icons prefix teal-text">message</i>
-              <textarea class="materialize-textarea" placeholder="Enter Message" id="message"></textarea>
+              <textarea class="materialize-textarea" placeholder="Enter Message" id="msg"></textarea>
             </div>
 
             <input type="submit" value="Submit" class="btn">
@@ -211,33 +214,28 @@
 
 
 
-  <!-- Footer  -->
-  <!-- <footer class="section teal darken-2 white-text center">
-      <p class="flow-text">&copy; TravelWorld 2020 </p>
-    </footer> -->
 
   <!-- Footer  to fix footer at bottom use  style="position:fixed;bottom:0;left:0;width:100%;"  -->
-  <footer id="foot" class="section teal darken-2 white-text center">
+   <!-- Footer  -->
+   <footer class="section teal darken-2 white-text center">
     <div class="container">
       <div class="row">
-        <!-- <div class="col s12 s3"></div>
-         <p class="flow-text">&copy; TravelWorld 2020 </p> -->
 
         <div class="col s12">
 
           <p>Follow us on social media for special offers</p>
 
-          <a href="https://facebook.com" class="white-text">
+          <a href="https://facebook.com" class="tooltipped white-text" data-position="left" data-tooltip="Facebook">
             <i class="fab fa-facebook fa-4x"></i>
           </a>
-          <a href="https://twitter.com" class="white-text">
+          <a href="https://twitter.com" class="tooltipped white-text" data-position="bottom" data-tooltip="Twitter">
             <i class="fab fa-twitter fa-4x"></i>
           </a>
-          <a href="https://linkedin.com" class="white-text">
+          <a href="https://linkedin.com" class="tooltipped white-text" data-position="bottom" data-tooltip="LinkedIn">
             <i class="fab fa-linkedin fa-4x"></i>
           </a>
-          <a href="https://pinterest.com" class="white-text">
-            <i class="fab fa-pinterest fa-4x"></i>
+          <a href="https://instagram.com" class="tooltipped white-text" data-position="right" data-tooltip="Instagram">
+            <i class="fab fa-instagram fa-4x"></i>
           </a>
           <hr>
           <p>&copy; TravelWorld 2020 </p>
@@ -246,12 +244,14 @@
       </div>
     </div>
   </footer>
+<!-- End of Footer  -->
 
 
 
 
   <!--JavaScript at end of body for optimized loading-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+  <script src="js/materialize.js"></script>
   <script>
 
     //Sidenav
@@ -300,6 +300,12 @@
       var instances = M.Dropdown.init(elems, {
         coverTrigger:false
       });
+    });
+
+     //Tooltipped
+     document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
     });
 
   </script>

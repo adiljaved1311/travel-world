@@ -7,7 +7,7 @@
 
   <!--Import materialize.css-->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-  
+
   <link rel="stylesheet" href="css/materialize.min.css">
 
   <link rel="stylesheet" href="css/main.css">
@@ -25,12 +25,13 @@
 
   <!-- NAVBAR -->
 
+<section>
   <div class="navbar-fixed">
     <nav class="teal">
       <div class="container">
         <div class="nav-wrapper">
 
-          <a href="#" class="brand-logo">TravelWorld <i class="material-icons">flight</i></a>
+          <a href="#" class="brand-logo">TravelWorld</a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
           <!-- Dropdown Structure -->
@@ -76,6 +77,7 @@
     </nav>
   </div>
 
+   
   <ul id='dropdown2' class='dropdown-content'>
     <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Sign in</a></li>
     <li><a class="waves-effect waves-light modal-trigger" href="signup.html">Sign up</a></li>
@@ -102,41 +104,44 @@
     </li>
 
   </ul>
+</div>  
+</div>
+</section>
   <!-- End of NavBar  -->
 
-  
+
 
 
   <!-- Section Slider -->
-  <section class="slider center-align">
+  <section class="slider center-align main_banner">
     <div class="container">
-      
+
       <div class="row">
         <div class="carousel-fixed-item center"></div>
         <div class="col s12">
           <ul class="slides">
             <li>
-               <img src="img/slider55.jpg">    <!-- random image -->
-              
-              <div class="caption center-align">
+              <img src="img/slider55.jpg"> <!-- random image -->
+
+              <div class="innertext caption center-align">
                 <h2>Take Your dream Vacation</h2>
-                <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur
+                <h5 class="light grey-text text-lighten-3">Lorem ipsum, dolor sit amet consectetur
                   adipisicing elit. Deserunt nobis unde dolorem qui culpa optio veritatis sequi reiciendis quasi porro?
                 </h5>
               </div>
             </li>
             <li>
               <img src="img/slider22.jpg"> <!-- random image -->
-              <div class="caption left-align">
+              <div class="innertext caption center-align">
                 <h2>We Work With All Budgets</h2>
-                <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur
+                <h5 class="light grey-text text-lighten-3">Lorem, ipsum dolor sit amet consectetur
                   adipisicing elit. Voluptate consequatur impedit cum, delectus natus quasi facere saepe voluptatum.
                   Tenetur, assumenda.</h5>
               </div>
             </li>
             <li>
               <img src="img/slider3.jpg"> <!-- random image -->
-              <div class="caption right-align">
+              <div class="innertext caption center-align">
                 <h2>Group & Individual Gateways</h2>
                 <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                   temporibus quidem, qui nobis officiis doloremque nemo eius porro amet deleniti.</h5>
@@ -144,42 +149,72 @@
             </li>
             <li>
               <img src="img/slider4.jpg"> <!-- random image -->
-              <div class="caption right-align">
+              <div class="innertext caption center-align">
                 <h2>Plan Your Trip Now</h2>
                 <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                   temporibus quidem, qui nobis officiis doloremque nemo eius porro amet deleniti.</h5>
               </div>
             </li>
-          
+
           </ul>
         </div>
       </div>
     </div>
+    <div class="container-fluid search_box section-search">
+      <div class="row">
+        <div class="col s12">
+          <form action="destination.html">
+            <div class="input-field" style="border-color: black; border: 2px;">
 
-  </section> 
+              <input type="text" class="white grey-text autocomplete"
+                style="border-radius: 30px; margin: 20px 20px; height: 1.2rem;" id="autocomplete-input"
+                placeholder="Search Destinations">
+              <!-- <span>
+              <a href="destination.html" class="blue darken-2 white-text waves-effect waves-light btn btn-small" style="margin-bottom: 8px;">Search<i class="material-icons left">search</i></a>
+            </span>   -->
+              <span>
+                <a href="destination.html" type="submit"
+                  class="searchbtn teal darken-2 white-text waves-effect waves-light btn btn-small"
+                  style="margin-bottom: 8px;">Search<i class="material-icons left">search</i></a>
+              </span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- End of Slider -->
 
 
 
-  <!-- Section: Search  -->
+  <!-- Section: Search 
   <section id="search" class="section section-search teal  white-text center scrollspy">
-    <div class="container">
+    <div class="container search_box section-search">
       <div class="row">
         <div class="col s12">
           <h3>Search Destinations</h3>
-          <div class="input-field" style="border-color: black; border: 2px;">
-            
-            <input type="text" class="white grey-text autocomplete" style="border-radius: 30px; margin: 20px 20px; height: 1.2rem;" id="autocomplete-input"
-              placeholder="Mumbai, Goa, etc.. ">
+          <form action="destination.html">
+            <div class="input-field" style="border-color: black; border: 2px;">
+
+              <input type="text" class="white grey-text autocomplete"
+                style="border-radius: 30px; margin: 20px 20px; height: 1.2rem;" id="autocomplete-input"
+                placeholder="Mumbai, Goa, etc.. ">
               <span>
               <a href="destination.html" class="blue darken-2 white-text waves-effect waves-light btn btn-small" style="margin-bottom: 8px;">Search<i class="material-icons left">search</i></a>
-            </span>  
-            </div>  
+            </span>   
+              <span>
+                <a href="destination.html" type="submit"
+                  class="blue darken-2 white-text waves-effect waves-light btn btn-small"
+                  style="margin-bottom: 8px;">Search<i class="material-icons left">search</i></a>
+              </span>
+            </div>
+          </form>
         </div>
-        
+
       </div>
     </div>
-   </section> <!-- End of Search -->
+  </section>  End of Search -->
 
 
   <!-- Section: Icon Boxes -->
@@ -215,10 +250,10 @@
 
   <!-- Parralex Image  -->
   <div class="parallax-container">
-      <div class="parallax"><img src="img/resort5.jpg" class="responsive-img"></div>
-    </div>
+    <div class="parallax"><img src="img/resort5.jpg" class="responsive-img"></div>
+  </div>
 
-    
+
   <!-- Section: Popular Destinations  -->
   <section id="popular" class="section section-popular scrollspy">
 
@@ -237,7 +272,7 @@
               nihil.
             </div>
             <div class="card-action">
-              <a href="destination.html" class="teal-text hoverable">More Details</a>
+              <a href="destination.html" class="white-text hoverable">More Details</a>
             </div>
           </div>
         </div>
@@ -253,7 +288,7 @@
               nihil.
             </div>
             <div class="card-action">
-              <a href="destination.html" class="teal-text hoverable">More Details</a>
+              <a href="destination.html" class="white-text hoverable">More Details</a>
             </div>
           </div>
         </div>
@@ -269,7 +304,7 @@
               nihil.
             </div>
             <div class="card-action">
-              <a href="destination.html" class="teal-text hoverable">More Details</a>
+              <a href="destination.html" class="white-text hoverable">More Details</a>
             </div>
           </div>
         </div>
@@ -277,15 +312,17 @@
       </div>
     </div>
   </section>
-
+<!-- End of Cards -->
 
 
   <!-- Section: Gallery -->
   <section id="gallery" class="section section-gallery scrollspy">
     <div class="container">
+	
       <h4 class="center">
         <span class="teal-text">Photo Gallery</span>
       </h4>
+	  
       <div class="row">
         <div class="col s12 m3">
           <img src="https://source.unsplash.com/1600x900/?nature" alt="" class="materialboxed responsive-img">
@@ -333,7 +370,7 @@
 
     </div>
   </section>
-
+<!-- End of Gallery  -->
 
 
 
@@ -395,13 +432,13 @@
           </div>
         </div>
 
-      </div>  
-    </div>    
+      </div>
+    </div>
 
   </section>
 
+<!-- End of Moadal Sign in  -->
 
-  
 
 
   <!-- Footer  -->
@@ -434,11 +471,14 @@
       </div>
     </div>
   </footer>
+<!-- End of Footer  -->
+
 
   <!--JavaScript at end of body for optimized loading-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+  <script src="js/materialize.js"></script>
 
-<script>
+  <script>
 
     //Sidenav
     const sideNav = document.querySelector('.sidenav');
@@ -482,27 +522,27 @@
       var elems = document.querySelectorAll('.modal');
       var instances = M.Modal.init(elems, Option);
     });
-    
+
     // Parralex
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems,{});
-  });
-    
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems, {});
+    });
+
     // Drop Down Trigger
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.dropdown-trigger');
       var instances = M.Dropdown.init(elems, {
-        coverTrigger:false,
-        
+        coverTrigger: false,
+
       });
     });
 
     //Tooltipped
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.tooltipped');
-    var instances = M.Tooltip.init(elems, {});
-  });
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
+    });
 
   </script>
 </body>
